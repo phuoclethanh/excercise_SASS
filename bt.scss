@@ -45,14 +45,6 @@ body{
 	color:$mauchu;
 	.top-ngonngu {
 		position: relative;
-		// &:hover{
-		// 	.cacngonngu{
-		// 		opacity: 1;
-		// 		visibility: visible;
-		// 		top: 50px;
-
-		// 	}
-		// }
 		b{
 			cursor:pointer;
 			font-size: $cochuvua;
@@ -60,11 +52,7 @@ body{
 		.cacngonngu {
 			position:absolute;
 			width: 155px;
-			// border:1px solid gray;
 			border:none;
-			// opacity:0;
-			// transition:0.4s;
-			// visibility: hidden;
 			background:$mauxanhdam;
 			z-index: 10;
 			top: 50px;
@@ -180,7 +168,6 @@ body{
 					line-height: 30px;
 					display: block;
 					width: 30px;
-					// padding:5px;
 					border:1px solid $mauvien;
 					border-radius: 3px;
 					display: inline-block;
