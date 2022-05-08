@@ -1,0 +1,238 @@
+//Phan 1 : dinh nghia cac doi tuong co ban trong web (mau, co chu, mau chu ...)
+//Cac anh su dung trong giao dien
+$anhlogo:"images/logo.png";
+
+//Mau:
+$mauxanhdam:#2c3e50;
+$mauchu:#2c3e50;
+$mauLogo:#1abc9c;
+$maunut:#21303f;
+$maunenxam:#f9fbfa;
+$mauchunhat:#a1b1bc;
+$mauvien:white;
+
+//Chu:
+$fontchu:'Lato', sans-serif;
+$cochunho:13px;
+$cochuvua:14px;
+$cochumenu:15px;
+$cochutieude:30px;
+
+$mauchu:white;
+
+//Cac chieu cao va rong:
+$topheight:50px;
+$logoheight:90px;
+$tieudeheight:120px;
+$tieudeheightmobile:26px;
+
+//code dung lai
+@mixin reset() {
+	margin: 0;
+	padding: 0;
+}
+
+//css cho phan top
+body{
+	font-family: $fontchu;
+	font-size: $cochunho;
+	overflow-x: hidden;
+}
+.top {
+	height: $topheight;
+	line-height: $topheight;
+	background:$mauxanhdam;
+	color:$mauchu;
+	.top-ngonngu {
+		position: relative;
+		// &:hover{
+		// 	.cacngonngu{
+		// 		opacity: 1;
+		// 		visibility: visible;
+		// 		top: 50px;
+
+		// 	}
+		// }
+		b{
+			cursor:pointer;
+			font-size: $cochuvua;
+		}
+		.cacngonngu {
+			position:absolute;
+			width: 155px;
+			// border:1px solid gray;
+			border:none;
+			// opacity:0;
+			// transition:0.4s;
+			// visibility: hidden;
+			background:$mauxanhdam;
+			z-index: 10;
+			top: 50px;
+			a{
+				display: block;
+				padding:3px 12px;
+				color:$mauchu;
+				font-size:13px;
+				line-height: 19px;
+				text-align: center;
+				font-weight: normal;
+			}
+		}
+	}
+	// het top ngon ngu
+	.phai{
+		.nut{
+			display: inline;
+			a.btn{
+				font-size: $cochunho;
+				color: $mauchu;
+				background-color:$maunut;
+				height: 30px;
+				padding: auto 11px;
+				border:none;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-right: 15px;
+				i{
+					padding-right:7px;
+
+				}
+			}
+		}
+		.caclink{
+			display: inline;
+			ul{
+				display: inline;
+				li{
+					display: inline;
+					list-style: none;
+					a{
+						color: $mauchu;
+						font-size: $cochunho;
+						padding-right:15px;
+					}
+				}
+			}
+		} // het cac link
+	}
+} // het top
+
+// Xu ly menu and logo
+.menuandlogo{
+	height: $logoheight;
+	line-height: $logoheight;
+	.menutop{
+		@include reset;
+		a.navbar-brand{
+			@include reset;
+			height: 90px;
+			img{
+				position: relative;
+				top: -4px;
+			}
+		}
+		ul.menuphai{
+			li.nav-item{
+				a.nav-link{
+					@include reset;
+					font-size: $cochumenu;
+					padding-right: 26px;
+					padding-left:26px;
+					text-transform: uppercase;
+					font-weight:900;
+					color: $mauxanhdam;
+				}
+			}
+		}
+		.timkiem{
+			i{
+				font-size: $cochumenu;
+			}
+		}
+	}
+}
+
+.tieude{
+	height: $tieudeheight;
+	line-height: $tieudeheight;
+	background-color:$maunenxam;
+	position:relative;
+	&:after{
+		content: '';
+		width: 100%;
+		height: $tieudeheight/3;
+		position: absolute;
+		top: 0px;
+		background-image: linear-gradient(#909090ad, #c1c1c005);
+	}
+	.trai{
+		h2{
+			height: $tieudeheight;
+			line-height: $tieudeheight;
+			font-size: $cochutieude;
+			color: $mauxanhdam;
+			a{	
+				height: 30px;
+				line-height: 30px;
+				display: inline-block;
+				i{	
+					height: 30px;
+					line-height: 30px;
+					display: block;
+					width: 30px;
+					// padding:5px;
+					border:1px solid $mauvien;
+					border-radius: 3px;
+					display: inline-block;
+					background-color:white;
+					color:$mauchunhat;
+					font-size: $cochunho;
+					text-align: center;
+					line-height: 30px;
+					position:relative;
+					top: -6px
+				}
+				
+			}
+		}
+	}
+	.phai{
+		.breadcrumb{
+			@include reset;
+			background-color: transparent;
+			li.breadcrumb-item{
+				&:first-child:before{
+					content: "";
+				}
+				&:before{
+					display: inline-block;
+					padding-right: 0.5rem;
+					color: #6c757d;
+					content: "\f105";
+					display: inline-block;
+					font: normal normal normal 14px/1 FontAwesome;
+					font-size: inherit;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					line-height: $tieudeheight;
+				}
+				a{
+					font-size:$cochuvua;
+					color:$mauchunhat;
+				}
+			}
+		}
+	}
+} // het tieude
+
+.slideanh{
+	#slide1{
+		a.carousel-control-prev{
+			span.carousel-control-prev-icon{
+							
+			}
+		}
+	}
+} // het slideanh //chua lam
+
+@import "btmobile";

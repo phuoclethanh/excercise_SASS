@@ -1,0 +1,175 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  overflow-x: hidden; }
+
+.top {
+  height: 50px;
+  line-height: 50px;
+  background: #2c3e50;
+  color: white; }
+  .top .top-ngonngu {
+    position: relative; }
+    .top .top-ngonngu b {
+      cursor: pointer;
+      font-size: 14px; }
+    .top .top-ngonngu .cacngonngu {
+      position: absolute;
+      width: 155px;
+      border: none;
+      background: #2c3e50;
+      z-index: 10;
+      top: 50px; }
+      .top .top-ngonngu .cacngonngu a {
+        display: block;
+        padding: 3px 12px;
+        color: white;
+        font-size: 13px;
+        line-height: 19px;
+        text-align: center;
+        font-weight: normal; }
+  .top .phai .nut {
+    display: inline; }
+    .top .phai .nut a.btn {
+      font-size: 13px;
+      color: white;
+      background-color: #21303f;
+      height: 30px;
+      padding: auto 11px;
+      border: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 15px; }
+      .top .phai .nut a.btn i {
+        padding-right: 7px; }
+  .top .phai .caclink {
+    display: inline; }
+    .top .phai .caclink ul {
+      display: inline; }
+      .top .phai .caclink ul li {
+        display: inline;
+        list-style: none; }
+        .top .phai .caclink ul li a {
+          color: white;
+          font-size: 13px;
+          padding-right: 15px; }
+
+.menuandlogo {
+  height: 90px;
+  line-height: 90px; }
+  .menuandlogo .menutop {
+    margin: 0;
+    padding: 0; }
+    .menuandlogo .menutop a.navbar-brand {
+      margin: 0;
+      padding: 0;
+      height: 90px; }
+      .menuandlogo .menutop a.navbar-brand img {
+        position: relative;
+        top: -4px; }
+    .menuandlogo .menutop ul.menuphai li.nav-item a.nav-link {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      padding-right: 26px;
+      padding-left: 26px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #2c3e50; }
+    .menuandlogo .menutop .timkiem i {
+      font-size: 15px; }
+
+.tieude {
+  height: 120px;
+  line-height: 120px;
+  background-color: #f9fbfa;
+  position: relative; }
+  .tieude:after {
+    content: '';
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    background-image: linear-gradient(#909090ad, #c1c1c005); }
+  .tieude .trai h2 {
+    height: 120px;
+    line-height: 120px;
+    font-size: 30px;
+    color: #2c3e50; }
+    .tieude .trai h2 a {
+      height: 30px;
+      line-height: 30px;
+      display: inline-block; }
+      .tieude .trai h2 a i {
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        width: 30px;
+        border: 1px solid white;
+        border-radius: 3px;
+        display: inline-block;
+        background-color: white;
+        color: #a1b1bc;
+        font-size: 13px;
+        text-align: center;
+        line-height: 30px;
+        position: relative;
+        top: -6px; }
+  .tieude .phai .breadcrumb {
+    margin: 0;
+    padding: 0;
+    background-color: transparent; }
+    .tieude .phai .breadcrumb li.breadcrumb-item:first-child:before {
+      content: ""; }
+    .tieude .phai .breadcrumb li.breadcrumb-item:before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      color: #6c757d;
+      content: "\f105";
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      line-height: 120px; }
+    .tieude .phai .breadcrumb li.breadcrumb-item a {
+      font-size: 14px;
+      color: #a1b1bc; }
+
+@media (max-width: 576px) {
+  .top {
+    height: auto;
+    text-align: center; }
+    .top .top-ngonngu .cacngonngu {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+      width: 100%; }
+      .top .top-ngonngu .cacngonngu a {
+        color: white; }
+
+  .menuandlogo {
+    height: auto;
+    border-bottom: 1px solid #1abc9c; }
+    .menuandlogo .menutop {
+      padding: 0 10px; }
+    .menuandlogo ul.menuphai li.nav-item a.nav-link {
+      line-height: 40px;
+      border-bottom: 1px dashed #b8b8b8; }
+    .menuandlogo .timkiem {
+      line-height: 26px; }
+
+  .tieude .trai h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  .tieude .phai {
+    border-top: 1px solid #1abc9c; }
+    .tieude .phai .breadcrumb {
+      height: 26px;
+      line-height: 26px;
+      justify-content: center; }
+      .tieude .phai .breadcrumb li.breadcrumb-item:before {
+        line-height: 26px; } }
+
+/*# sourceMappingURL=bt.css.map */

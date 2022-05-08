@@ -1,0 +1,58 @@
+@media(max-width: 576px){
+	.top{
+		height: auto;
+		text-align: center;
+		.top-ngonngu{
+			.cacngonngu{
+				position:static;
+				visibility: visible;
+				opacity: 1;
+				width: 100%;
+				a{
+					color: $mauchu;
+				}
+			}
+		}
+	}
+	.menuandlogo{
+		height: auto;
+		border-bottom:1px solid $mauLogo;
+		.menutop{
+			padding: 0 10px;
+		}
+		ul.menuphai{
+			li.nav-item{
+				a.nav-link{
+					line-height: 40px;
+    				border-bottom: 1px dashed #b8b8b8;
+				}
+			}
+		}
+		.timkiem{
+			line-height: 26px;
+		}
+	}
+	.tieude{
+		.trai{
+			h2{
+				@include reset;
+				text-align: center;
+			}
+		}
+		.phai{
+			border-top:1px solid $mauLogo;
+			.breadcrumb{
+				height: $tieudeheightmobile;
+				line-height: $tieudeheightmobile;
+				justify-content:center;
+					li.breadcrumb-item{
+						&:before{
+							line-height: $tieudeheightmobile;
+						}
+					}
+				
+				
+			}
+		}
+	}
+}
